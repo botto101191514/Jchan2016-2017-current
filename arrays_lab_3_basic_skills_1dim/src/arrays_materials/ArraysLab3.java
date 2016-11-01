@@ -15,7 +15,14 @@ public class ArraysLab3
 		assert (arr1.length > 0);
 		assert (arr2.length > 0);
 		assert (arr1.length == arr2.length);
-		
+		int[] sumArray = new int[arr1.length];
+		for (int i = 0; i <= arr1.length; i++)
+		{
+			int index1 = arr1[i];
+			int index2 = arr2[i];
+			sumArray[i]= index1 + index2;
+		}
+		return sumArray;
 	}
 	
 	/*
@@ -91,6 +98,6 @@ public class ArraysLab3
 	
 	public static void main(String[] args) 
 	{
-		
+		System.out.println(sum());
 	}
 }

@@ -1,5 +1,1 @@
-INDEX VERSION 1.129+C:\Users\Jason\Desktop\Jchan2016-2017-current\.metadata\.plugins\org.eclipse.jdt.core
-4022798921.index
-1294244358.index
-1340320222.index
-4022713689.index
+INDEX VERSION 1.129+C:\Users\APCS1\Desktop\Jchan2016-2017-current\.metadata\.plugins\org.eclipse.jdt.core

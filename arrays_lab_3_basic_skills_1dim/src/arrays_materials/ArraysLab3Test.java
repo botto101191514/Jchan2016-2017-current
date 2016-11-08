@@ -25,10 +25,10 @@ public class ArraysLab3Test
 	@Test
 	public void testAppend() 
 	{
-		int[] arr1 = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
+		int[] arr = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
 		int   num = 			200;
 		int[] expectedResult = 	{0, 5, 10, 15, 20, 25, 30, 35, 40, 200};
-		int[] result = ArraysLab3.append(arr1, num);
+		int[] result = ArraysLab3.append(arr, num);
 		Assert.assertArrayEquals("Result " + Arrays.toString(result) 
 		                         + " Does not match the expected value of " + Arrays.toString(expectedResult),
 		                         expectedResult, result);
@@ -38,10 +38,10 @@ public class ArraysLab3Test
 	@Test
 	public void testRemove() 
 	{
-		int[] arr1 = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
+		int[] arr = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
 		int  idx = 			     5;
 		int[] expectedResult = 	{0, 5, 10, 15, 20, 30, 35, 40};
-		int[] result = ArraysLab3.remove(arr1, idx);
+		int[] result = ArraysLab3.remove(arr, idx);
 		Assert.assertArrayEquals("Result " + Arrays.toString(result) 
 		                         + " Does not match the expected value of " + Arrays.toString(expectedResult),
 		                         expectedResult, result);
@@ -51,9 +51,9 @@ public class ArraysLab3Test
 	@Test
 	public void testSumEven() 
 	{
-		int[] arr1 = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
+		int[] arr = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
 		int expectedResult = 	100;
-		int result = ArraysLab3.sumEven(arr1);
+		int result = ArraysLab3.sumEven(arr);
 		assertEquals("Result " + result
 		             + " Does not match the expected value of " + expectedResult,
 		              expectedResult, result);
@@ -63,12 +63,12 @@ public class ArraysLab3Test
 	@Test
 	public void testRotateRight() 
 	{
-		int[] arr1 = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
+		int[] arr = 				{0, 5, 10, 15, 20, 25, 30, 35, 40};
 		int[] expectedResult = 	{40, 0, 5, 10, 15, 20, 25, 30, 35};
-		ArraysLab3.rotateRight(arr1);
-		Assert.assertArrayEquals("Result " + arr1
+		ArraysLab3.rotateRight(arr);
+		Assert.assertArrayEquals("Result " + arr
 		                          + " Does not match the expected value of " + expectedResult,
-		                          expectedResult, arr1);
+		                          expectedResult, arr);
 		System.out.println("Unit test testRotateRight passed.");
 	}
 

@@ -34,7 +34,10 @@ public class ArraysLab3
 	public static int[] append(int[] arr, int num)
 	{
 		assert (arr.length > 0);
-		
+		int[] appendArray = new int[arr.length + 1];
+		int x = arr[arr.length];
+		appendArray[appendArray.length] = x;
+		return appendArray;
 	}
 	
 	/*
@@ -46,7 +49,9 @@ public class ArraysLab3
 	public static int[] remove(int[] arr, int idx)
 	{
 		assert (arr.length >= 2);
-		
+		int [] removeArray = new int[arr.length];
+		removeArray[idx] = 0;
+		return removeArray;
 	}
 	
 	/*
@@ -57,7 +62,16 @@ public class ArraysLab3
 	public static int sumEven(int[] arr)
 	{
 		assert (arr.length > 0);
-		
+		int x = 0;
+		for (int i = 0; i <= arr.length; i++)
+		{
+			int num1 = arr[i];
+			if (num1 % 2 == 0)
+			{
+				x = x + num1;
+			}
+		}
+		return x;
 	}
 	
 	/*
@@ -70,7 +84,15 @@ public class ArraysLab3
 	public static void rotateRight(int[] arr)
 	{
 		assert (arr.length > 0);
-		
+		int last = arr[arr.length];
+		for (int i = 0; i <= arr.length; i++)
+		{
+			int x = arr[i];
+			int placeholder = arr [i + 1];
+			arr[i + 1] = x;
+			x = placeholder;
+		}
+		arr[0] = last;
 	}
 
 	/*
@@ -98,6 +120,6 @@ public class ArraysLab3
 	
 	public static void main(String[] args) 
 	{
-		System.out.println(sum());
+		
 	}
 }
